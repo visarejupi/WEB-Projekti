@@ -35,6 +35,7 @@
 }
 .titulli3{
     font-family: 'Andika New Basic', sans-serif;
+    line-height: 25px;
 }
 .description{
     background-color: rgb(33, 33, 33);
@@ -46,40 +47,28 @@
 .description img{
     float: right;
     clear: right;
-    margin-top: -29%;
+    margin-top: -30%;
     padding-right: 180px;
 }
 .upper-container{
-    border: 1px solid black;
-    height: 50vh;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.pictures{
+.upper-container-item{
     flex-basis: 50px;
     width: 50%;
 
 }
-.lines{
-    background-color: lightgray;
-    width: 50px;
-    height: 10px;
-}
-.lines:nth-child{
-    background-color: gray;
-}
-.lines:nth-child(2){
-        background-color: gray;
-    
-}
-.pictures:nth-child(2){
+
+.upper-container-item:nth-child(2){
 display: flex;
-justify-content: center;
+
 align-items: center;
 }
-.pictures:last-child{
+.upper-container-item:last-child{
 flex-grow: 1;
 width: 100%;
 display: flex;
@@ -88,19 +77,35 @@ justify-content: space-around;
 align-items: center;
 
 }
-.pic{
+.post{
     flex-basis: 200px;
     height: 50%;
     display:  flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
-.pic img{
-    height: 50px;
-    width: 50px;
+.post img{
+    height: 350px;
+    width: 350px;
 }
-.pic-item{
+.post-item{
     margin: 5px 0;
+}
+.post h4{
+    padding-top: 25px;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-family: 'Andika New Basic', sans-serif;
+    color: 	rgb(79, 79, 79);
+
+}
+.post p{
+    font-family: 'Andika New Basic', sans-serif;
+    line-height: 25px;
+    font-size: 15px;
+    padding-bottom: 12%;
+    color: 	rgb(79, 79, 79);
+
 }
