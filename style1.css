@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Antic Slab', serif;
+}
+.icon img{
+    height: 60px;
+    position: absolute;
+    padding-left: 20px;
+}
+.header ul{
+    list-style: none;
+    display: inline;
+}
+.header a{
+    text-decoration: none;
+    flex-direction: column;
+    color: 	rgb(79, 79, 79);
+    padding: 10px;
+
+}
+.header{
+    background-color: white;
+    text-align: center;
+    padding: 18px;
+    list-style: square;
+    font-size: 18px;
+}
+
+    
+
+.titulli2{
+    font-family: 'Andika New Basic', sans-serif;
+    line-height: 25px;
+    font-size: 18px;
+    padding-left: 300px;
+   
+    
+}
+.titulli1{
+    color: black;
+    padding: 80px; 
+    text-align: center;
+    font-family: 'Andika New Basic', sans-serif;
+    font-size: 40px;
+    
+
+}
