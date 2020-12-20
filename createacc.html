@@ -6,7 +6,12 @@
     <title>3 IN 1 TREE LAMP</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="tabicon.png" >
+    <script src="createacc.js"></script>
+
+
 </head>
+
+<body>
 <main>
 <header>
     <div class="fixed-header">
@@ -22,23 +27,27 @@
         </ul>
     </div>
     </header>
-    <main>
+    <body>
+        <main>
+            <form id="form">
+          
+                <div class="login">
+                <h1>Sign up</h1>
+                <p>Fill the following requests</p>
         
-            <div class="contact">
-            <h1>Sign up</h1>
-            <p>Fill the following requests</p>
-        </div>
-            <form>
-                <div class="signup">
-                    <input type="text" id="fname" name="fname" required placeholder="First Name" autocomplete="off"  ><br>
-                    <input type="text" id="sname" name="sname" required placeholder="Second Name" autocomplete="off"  ><br>
-                    <input type="email" name="semail" id="semail" autocomplete="off" autocapitalize="off" required placeholder="Email"><br> 
-                    <input type="password" name="spassword" id="spassword" placeholder="Password" required>
-                    <input type="password" name="spassword1" id="spassword1" placeholder="Confirm Password" required>
-                    <button class="btn1" >Sign up</button>
+               <input type="name" placeholder="First Name" id="fname" />
+               <input type="name" placeholder="Second Name" id="sname" />
+               <input type="email" placeholder="Email" id="cemail"  />
+               <input type="password" placeholder="Enter Password here" id="cpassword"  />
+               <input type="password" placeholder="Confirm Password" id="cpassword1"  />
+                
+               <button class="loginbtn" value="Login"  onClick="login()" >Log in</button>
+    
                 </div>
-            </form>
-            </main>
+                </div>
+                 </form>
+                
+        </main>
     
     <footer>
         <div class="footeri">
@@ -68,5 +77,6 @@
         </div>
 
     </footer>
+
 </body>
 </html>

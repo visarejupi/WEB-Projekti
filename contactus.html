@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="tabicon.png" >
 </head>
+<body>
+    
 <main>
 <header>
     <div class="fixed-header">
@@ -17,6 +19,7 @@
                 <a href="aboutus.html">ABOUT US</a>
                 <a href="contactus.html">CONTACT US</a>
                 <a href="register.html">REGISTER</a>
+                <script src="contactus.js"></script>
 
             </li>
         </ul>
@@ -27,16 +30,24 @@
         <h1>Contact us!</h1>
         <p>Do not hesitate to contact our team</p>
     </div>
-        <form>
-            <div class="contactus">
-                <input type="text" id="name" name="name" required placeholder="Name" autocomplete="off"  ><br>
-                <input type="email" name="email" id="email" autocomplete="off" autocapitalize="off" required placeholder="Email"><br> 
-                <textarea rows="4" cols="50" name="comment" id="textarea" required form="usrform" placeholder="Enter your text here..."></textarea><br>                 
-                <button class="btn1" >Submit</button>
-            </div>
-        </form>
+    <form id="form">
+      
+        <div class="login">
+
+       <input type="email" placeholder="Email" id="loginemail2" class="tb" />
+     
+        <input type="password" placeholder="Enter Password here" id="password" class="tb" />
+    
+        <textarea rows="4" cols="50" name="comment" id="textarea" required form="usrform" placeholder="Enter your text here..."></textarea><br>                 
+
+        <button class="loginbtn" value="Login"  onClick="login()" >Log in</button>
+
+        </div>
+        </div>
+         </form>
         </main>
         <footer>
+
             <div class="footeri">
                 <ul class="lista">
                     <h3>Legals</h3>
