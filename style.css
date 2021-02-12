@@ -67,6 +67,7 @@ transition: ease-out 0.2s;
     padding-top: 15px;
 }
 .sponzorat{
+margin-top: 3%;
 padding-top: 20px;
 
 }
@@ -311,12 +312,12 @@ font-size: 16px;
     margin-top: -5%;
     width: 35%;
     text-align: left;
-    padding: 10px 5px;
+    padding: 10px 15px;
     border: 1px solid grey;
     margin-bottom: 15px;
 }
 #textarea{
-    margin-top: 1%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .loginbtn1{
     margin-right: 50px;
@@ -360,4 +361,108 @@ font-size: 16px;
 .contact p{
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.prchbtn{
+    padding: 15px 32px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    display: grid;
+    background-color: #07b5f5;
+    border: none;
+    color: white;
+    font-size: 16px;
+
+}
+
+/* Purchase CSS */
+
+.slider img{
+float: right;
+}
+.slider{
+width: 50%;
+float: left;
+height: 480px;
+padding: 8px;
+
+
+
+}
+.buysection{
+width: 50%;
+float: left;
+height: 480px;
+padding: 8px;
+display: flex;
+flex-direction: column;
+font-size: 22px;
+
+
+}
+.buysection p{
+    float: left;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.purchase{
+text-align: center;
+margin-top: 6%;
+display: block;
+}
+.plug{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.emitting{
+   padding-top: 25px;
+    text-align: left;
+    font-size: 15px;
+
+}
+.quantity{
+    padding-top: 20px;
+    text-align: left;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+#plugt{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+    width: 40%;
+}
+#vlera{
+    padding: 5px 10px;
+    padding: 5px 10px;
+    width: 55px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.buypurchase{
+    width: 54%;
+    text-align: center;
+    background-color: #07b5f5;
+    padding: 5px 10px;
+    margin-top: 1.5%;
+
+}
+.buypurchase a{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+.trustbadge{
+    padding-top: 10px;
+}
+.trustbadge img{
+    float: left;
+
+}
+.txtproduct p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    padding-top: 5px;
 }
