@@ -3,466 +3,850 @@
     padding: 0;
     box-sizing: border-box;
 }
-.fixed-header a:hover{
-font-size: 18px;
-color: rgb(173, 171, 46);
-transition: ease-out 0.2s;
-}
-.fixed-header{
-    width: 100%;
-    position: fixed;        
-    background-color: white;
-    padding: 10px 0;
-    border: 0.5px rgb(198, 198, 198) solid;
-}
-.fixed-header{
+
+/* index CSS */
+.header{
     top: 0;
 }
-.foto{
+
+.navigimi{
+    height: 45px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    border: none;
+    border-bottom:1px solid rgb(199, 199, 199);
+}
+
+.navigimi a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+.navigimi  :hover{
+    font-size: 18px;
+    transition: 0.4s;
+    color: rgb(128, 94, 0);
+
+}
+
+.firstphoto img{
     margin-top: 3%;
+    width: 100%;
 }
-.container{
-    width: 80%;
-    margin: 0 auto; 
-}
-.container li{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
-    padding: 10px 25px;
+.features{
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    justify-content: center;
+}
+.features p{
+    font-size: 20px;
+    font-family: 'Assistant', sans-serif;
+}
+.features img{
+    width: 400px;
+    height: 450px;
+}
+.features li{
     list-style: none;
-    color: black;
-    text-decoration: none;
-}
-.container a{
-    color: black;
-    text-decoration: none;
-    padding: 15px;
-
-}
-.container img{
-    width: 100px;
-    float: left;
-    margin: -1.8%;
-    margin-left: -15%;
-    
-}
-.clm{
-    margin-top: 35px;
-    float: left;
-    width: 33.3%;
-    padding: 10px;
-    text-align: center; 
-    line-height: 28px;
-    font-size: 17px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: 	rgb(79, 79, 79);
-
-
-}
-.clm img{
-    height: 400px;
-}
-.clm p{
     padding-top: 15px;
 }
-.sponzorat{
-margin-top: 3%;
-padding-top: 20px;
+.features ul{
+    
+    padding-top: 40px;
+    font-family: 'Assistant', sans-serif;
+    padding-right: 50px;
+    margin-left: 3%;
+}
+.features ul a{
+    text-decoration: none;
+    background-color: rgb(3, 142, 255);
+    color: white;
+    padding: 3px 15px;
 
 }
-.sponzorat p{
+.features li a:hover{
+    color: rgb(3, 142, 255);
+    background-color: white;
+    border: 1px solid rgb(3, 142, 255);
+    ;
+}
+.goodbyetxt p{
     text-align: center;
-    margin-top: 42%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:black ;
-    font-size: 38px;
-    padding-bottom: 30px;
-
+    font-size: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-family: 'Dancing Script', cursive;
 }
 .sponzorat img{
-    width:50% ;
-    float: left;
-    left: 50%;
-    margin-left: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 15px;
 }
-.lista{
-    text-decoration: none;
-    list-style: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: black;
-    padding-left: 35px;
-    color: white;
-
-}
-.footeri{
-    background-color: 	rgb(159, 159, 159);
-    color: black;
+.upper{
+    background-color:rgb(163, 163, 163);
     display: flex;
     flex-direction: row;
-    margin-top: 10%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-
-    
-    
+    justify-content: space-between;
+    margin-top: 50px;
 }
-.rightside{
-    text-decoration: none;
+.footer ul{
     list-style: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    color: white;
+    padding: 35px 40px;
+    font-family: 'Assistant', sans-serif;
+
+}
+.footer li{
+    padding-top: 5px;
+}
+.footer li a{
+    background-color: white;
+    padding: 2px 15px;
     color: black;
+
+}
+.footer li a:hover{
+    
+    background-color: rgb(3, 142, 255);
+    color: white;
+
+}
+
+.right a{
+    text-decoration: none;
+}
+.down{
+    background-color:rgb(48, 48, 48);
+    color: white;
+    padding: 25px 30px;
+    font-family: 'Assistant', sans-serif;
     font-size: 14px;
-    padding-left: 65%;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/* about us CSS */
+
+#aboutustxt{
+    padding-top: 5%;
+    font-family: 'Assistant', sans-serif;
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    font-size: 20px;
+    line-height: 48px;
+}
+#aboutustxt h2{
+    padding-bottom: 22px;
+    font-size: 35px;
+    text-align: center;
+}
+#aboutustxt p{
+    font-size: 18px;
 }
 
 
-.form input{
-    margin-top: 5%;
-    height: auto;
-    line-height: 30px;
-    width: %;
-    font-size: 15px;
-}
-.form .btn{
-background-color:white; 
-border: 1px solid black;
-color: black;
-border: none;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-transition-duration: 0.4s;
-cursor: pointer;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-width: 30%;
-font-weight: bold;
-padding:1px
 
-}
-.form .btn:hover{
-    background-color: #07b5f5;
-    cursor: pointer;
-    color: white;
-}
-.downfooter{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: 	rgb(43, 43, 43);
-}
-.copyright{
-    color: white;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 35px ;
-    font-size: 13px;
+
+/* contact us CSS */
+
+.contact{
+    display: block;
+    flex-direction: column;
+    font-family: 'Assistant', sans-serif;
+    height: 75%;
+
+
 }
 .contactus{
+    height: 75%;
 
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 25px;
-    text-align: left;
-    margin-bottom: -80px;
 }
-#name{
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-}
-#email {
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-}
-#textarea{
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-}
-.login1{
-    margin-top: 5%;
+.contactus h1{
+    font-family: 'Assistant', sans-serif;
+    padding-top: 5%;
     text-align: center;
-    padding-top: 25px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.btn1{
-background-color: #07b5f5;
-border: none;
-color: white;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-}
-.text{
-    margin-top: 5%;
-    text-align: left;
-    padding-top: 25px;
-    margin-bottom: -55px;
+    font-size: 35px;
 
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-.text h1{
-    padding-bottom: 1%;
+
+}
+.contactus p{
+    font-family: 'Assistant', sans-serif;
     text-align: center;
+    padding-bottom: 22px;
+
 }
-.text p{
-    line-height: 55px;
-    padding-left: 195px ;
-}
-.login{
+#contactform{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin: auto;
+    height: 50%;
+    cursor: pointer;
+}
+#contactform input{
+    width: 100%;
+    padding: 10px 15px;
+    font-family: 'Assistant', sans-serif;
+  
+}
+#textarea{
+    width: 100%;
+    padding: 10px 15px;
     margin-top: 5%;
-    text-align: center;
-    padding-top: 25px;
-   
-    margin-bottom: -80px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Assistant', sans-serif;
 }
-#loginemail {
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-    margin-bottom: 15px;
-}
-#password {
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-}
-.login p{
-    padding-bottom: 25px;
-}
-.loginbutonat{
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    margin-top: 1%;
+.feedbackbtn{
+    
+    padding: 10px 15px;
+    background-color: rgb(3, 142, 255);
+    color: white;
+    margin-top: 3%;
+    font-family: 'Assistant', sans-serif;
+    border: none;
+    margin-left:35% ;
 
+}    
+.feedbackbtn:hover{
+    background-color:white;
+    border: 1px solid rgb(3, 142, 255);
+    color:  rgb(3, 142, 255);
+}
+.writeback{
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Assistant', sans-serif;
+    color: rgb(163, 163, 163);
+
+}
+
+/* login CSS */
+
+#loginform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+.login1{
+    height: 75%;
+
+}
+.login1 h1{
+    font-family: 'Assistant', sans-serif;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 35px;
+
+
+}
+.login1 p{
+    font-family: 'Assistant', sans-serif;
+    text-align: center;
+    padding-bottom: 22px;
+}
+.login{
+    display: block;
+    flex-direction: column;
+    font-family: 'Assistant', sans-serif;
+    height: 75%;
+    width: 25%;
+}
+.login input{
+
+width: 100%;
+padding: 10px 15px;
+font-family: 'Assistant', sans-serif;
+margin-bottom: 5%;
 
 }
 .loginbtn{
-    margin-right: 50px;
-    padding: 15px 32px;
-    background-color: #07b5f5;
-    border: none;
+    
+    padding: 10px 15px;
+    background-color: rgb(3, 142, 255);
     color: white;
-    font-size: 16px;
-}
-.hapsira{
-    text-align: center;
     margin-top: 3%;
-    color: white;
-
+    font-family: 'Assistant', sans-serif;
+    border: none;
+    margin-left: 45%;
+}    
+.loginbtn:hover{
+    background-color:white;
+    border: 1px solid rgb(3, 142, 255);
+    color:  rgb(3, 142, 255);
 }
-.signup{
 
+/* register CSS */
+#createaccform{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     padding: 25px;
-     text-align: left;
-     margin-bottom: -80px;
- }
- #semail {
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-}
-#spassword{
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-}
-#fname, #sname{
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-}
-#sname{
-    margin-top: 1%;
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-}
-
-#loginemail2{
-    margin-top: -5%;
-    width: 35%;
-    text-align: left;
-    padding: 10px 15px;
-    border: 1px solid grey;
-    margin-bottom: 15px;
-}
-#textarea{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.loginbtn1{
-    margin-right: 50px;
-    padding: 15px 32px;
-    background-color: #07b5f5;
-    border: none;
-    color: white;
-    font-size: 16px;
-}
-#cemail{
-    margin-top: 1%;
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-    margin-bottom: 15px;
-}
-#cpassword{
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-    margin-bottom: 15px;
-}
-#cpassword1{
-    width: 35%;
-    text-align: left;
-    padding: 10px 5px;
-    border: 1px solid grey;
-    margin-bottom: 15px;
-}
-.contact{
-    margin-top: 7%;  
-
-}
-.contact h1{
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-.contact p{
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.prchbtn{
-    padding: 15px 32px;
-    text-align: center;
     margin: auto;
-    margin-top: 2%;
-    display: flex;
-    display: grid;
-    background-color: #07b5f5;
-    border: none;
-    color: white;
-    font-size: 16px;
+    cursor: pointer;
+}
+.createaccount{
+    height: 75%;
 
 }
+.createaccount h1{
+    font-family: 'Assistant', sans-serif;
+    padding-top: 20%;
+    text-align: center;
+    font-size: 35px;
 
-/* Purchase CSS */
+
+}
+.createaccount p{
+    font-family: 'Assistant', sans-serif;
+    text-align: center;
+    padding-bottom: 22px;
+}
+.createacc{
+    display: block;
+    flex-direction: column;
+    font-family: 'Assistant', sans-serif;
+    height: 75%;
+    width: 25%;
+}
+.createacc input{
+
+width: 100%;
+padding: 10px 15px;
+font-family: 'Assistant', sans-serif;
+margin-bottom: 5%;
+
+}
+.registerbtn{
+    
+    padding: 10px 15px;
+    background-color: rgb(3, 142, 255);
+    color: white;
+    margin-top: 3%;
+    font-family: 'Assistant', sans-serif;
+    border: none;
+    margin-left: 42%;
+}    
+.registerbtn:hover{
+    background-color:white;
+    border: 1px solid rgb(3, 142, 255);
+    color:  rgb(3, 142, 255);
+}
+/* purchase CSS */
+
 
 .slider img{
-float: right;
-}
-.slider{
-width: 50%;
-float: left;
-height: 480px;
-padding: 8px;
-
-
-
-}
-.buysection{
-width: 50%;
-float: left;
-height: 480px;
-padding: 8px;
-display: flex;
-flex-direction: column;
-font-size: 22px;
-
-
-}
-.buysection p{
+    float: right;
+    }
+    .slider{
+    width: 50%;
     float: left;
-    text-align: left;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    height: 480px;
+    padding: 8px;
+    
+    
+    
+    }
+    .buysection{
+    width: 50%;
+    float: left;
+    height: 480px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    
+    
+    }
+    .buysection p{
+        float: left;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .purchase{
+    text-align: center;
+    padding-top: 5%;
+    display: block;
+    padding-bottom: 6%;
 
-.purchase{
-text-align: center;
-margin-top: 6%;
-display: block;
+    }
+    .plug{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .emitting{
+       padding-top: 25px;
+        text-align: left;
+        font-size: 15px;
+    
+    }
+    .quantity{
+        padding-top: 20px;
+        text-align: left;
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    }
+    #plugt{
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 5px 10px;
+        width: 40%;
+    }
+    #vlera{
+        padding: 5px 10px;
+        padding: 5px 10px;
+        width: 55px;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    .buypurchase{
+        width: 54%;
+        text-align: center;
+        background-color: #07b5f5;
+        padding: 5px 10px;
+        margin-top: 1.5%;
+    
+    }
+    .buypurchase a{
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+    }
+    .trustbadge{
+        padding-top: 10px;
+    }
+    .trustbadge img{
+        float: left;
+    
+    }
+    .txtproduct p{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    
+  
+    /* Responsivity Iphone 8+ */
+
+
+    /*Header Responsivity */
+
+    @media only screen
+     and (device-width: 414px)
+     and (device-height:736px)
+     and (-webkit-device-pixel-ratio :3)
+     {
+
+.headeri a{
+    font-size: 14px;
+    text-align: center;
+    align-items: stretch;
+    padding: 55px 25px;  
 }
-.plug{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.navigimi  {
+    display: block;
+    text-align: center;
 }
-.emitting{
-   padding-top: 25px;
-    text-align: left;
-    font-size: 15px;
+.navigimi a {
+   padding-top: 5%;
+   
+}
+.header {
+    height: 50px;
 
 }
-.quantity{
-    padding-top: 20px;
-    text-align: left;
-    font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.headeri{
     
 }
-#plugt{
-    border: none;
-    border-bottom: 1px solid black;
-    padding: 5px 10px;
-    width: 40%;
 }
-#vlera{
-    padding: 5px 10px;
-    padding: 5px 10px;
-    width: 55px;
-    border: none;
-    border-bottom: 1px solid black;
-}
-.buypurchase{
-    width: 54%;
-    text-align: center;
-    background-color: #07b5f5;
-    padding: 5px 10px;
-    margin-top: 1.5%;
 
-}
-.buypurchase a{
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-}
-.trustbadge{
-    padding-top: 10px;
-}
-.trustbadge img{
-    float: left;
+    /*Footer Responsivity */
 
-}
-.txtproduct p{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    @media only screen
+    and (device-width: 414px)
+    and (device-height:736px)
+    and (-webkit-device-pixel-ratio :3)
+    {
+.footer{
     font-size: 12px;
-    padding-top: 5px;
 }
+.right{
+padding-right: -8%;
+}
+.down{
+    font-size: 9px;
+}
+}
+
+
+    /* Index Responsivity Iphone 8+ */
+ 
+   
+    @media only screen
+    and (device-width: 414px)
+    and (device-height:736px)
+    and (-webkit-device-pixel-ratio :3)
+    {
+
+    .firstphoto img{
+    width: 100%;
+    height: 160px;
+    margin-top: -2%;
+    padding: none;
+
+   }
+   .features{
+    padding-top:-5%;
+    width: 75%;
+   }
+    .features li{
+        font-size: 13px;
+
+    }
+    .features ul{
+        padding: none;
+
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .features img{
+        width: 120px;
+        height: 120px;
+        margin: auto;
+    }
+    .goodbyetxt p {
+        font-size: 22px;
+    }
+    .sponzorat img {
+        width: 80%;
+    }
+    }
+
+    /* About us Responsivity Iphone 8+ */
+ 
+   
+    @media only screen
+    and (device-width: 414px)
+    and (device-height:736px)
+    and (-webkit-device-pixel-ratio :3)
+    {
+   main{
+    padding-top: 55px;
+   }
+#aboutustxt p{
+ font-size: 14px;
+}
+#aboutustxt h2{
+ font-size: 25px;
+}
+
+}
+
+
+    /* Contact us Responsivity Iphone 8+ */
+
+    @media only screen
+    and (device-width: 414px)
+    and (device-height:736px)
+    and (-webkit-device-pixel-ratio :3)
+    {
+    .contactus p{
+        font-size: 14px;
+       }
+       .contactus h1{
+        font-size: 25px;
+       }
+    .writeback p{
+        padding-top: 35px;
+        font-size: 13px;
+    }
+    .feedbackbtn{
+        margin-left: 32%;
+    }
+ }
+
+     /* Login Responsivity Iphone 8+ */
+
+     @media only screen
+     and (device-width: 414px)
+     and (device-height:736px)
+     and (-webkit-device-pixel-ratio :3)
+     {
+    .login1 p{
+        font-size: 14px;
+     }
+    .login1 h1{
+        font-size: 25px;
+    }
+    .login {
+        margin: auto;
+        width: 86%;
+    }
+    .login input{
+
+        margin: auto;
+       display: block;
+    }
+    .login button {
+    margin: auto;
+    margin-left: 40%;
+
+    }
+     }
+
+     /* Sign up Responsivity Iphone 8+ */
+
+     @media only screen
+     and (device-width: 414px)
+     and (device-height: 736px)
+     and (-webkit-device-pixel-ratio :3)
+     {
+    .createacc p{
+        font-size: 14px;
+     }
+    .createacc h1{
+        font-size: 25px;
+
+    }
+    .createaccount{
+        margin-top: -12%;
+
+    }
+    .createacc {
+        margin: auto;
+        width: 86%;
+    }
+    .createacc input{
+
+        margin: auto;
+       display: block;
+    }
+    .createacc button {
+    margin: auto;
+    margin-left: 38%;
+
+    }
+     }  
+
+
+     /* Purchase Responsivity Iphone 8+ */
+
+
+     @media only screen
+     and (min-width: 414px)
+     and (min-height:736px)
+     and (-webkit-device-pixel-ratio :3)
+     {
+     
+        .purchase{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: -55%;
+        }
+        .slider {
+            margin: auto;
+            text-align: center;
+            margin-left: 37%;
+
+    }
+        .slider img{
+            width: 300px;
+            height: 300px;
+            margin-top: 5%;
+
+        }
+        .buysection p{
+            text-align: center;
+            margin:auto;
+        }
+        .buysection{
+            margin: auto;
+            margin-top: -30%;
+        }
+        .plug{
+            width: 120%;
+        }
+        .quantity{
+            margin: auto;
+            padding-bottom: 25px;
+            
+        }
+        .buypurchase{
+            margin: auto;
+            margin-bottom: 25px;
+        }
+        .trustbadge img{
+            margin: auto;
+            width: 100%;
+        }
+        .txtproduct p{
+            font-size: 15px;
+        }
+ 
+     }
+
+          /* header Responsivity IPAD */
+
+          @media only screen
+          and (min-width: 768px)
+          and (min-height:1024px){
+
+            .navigimi a{
+                font-size: 16px;
+                padding: 25px 25px;
+            }
+          }
+          /* index Responsivity IPAD */
+
+          @media only screen
+          and (min-width: 768px)
+          and (min-height:1024px){
+          .features img{
+              width: 150px;
+              height: 150px;
+          }
+            .features ul{
+                display: flex;
+                flex-direction: column;
+            }
+            .features li{
+                font-size: 12px;
+            }
+            .features li p{
+                font-size: 12px;
+            }
+            .goodbyetxt p {
+                font-size: 23px;
+            }
+        }
+
+                  /* about us Responsivity IPAD */
+
+         @media only screen
+         and (min-width: 768px)
+         and (min-height:1024px){
+        
+        .aboutustxt h2{
+
+            margin-top: 8%;
+            font-size: 20px;
+        }
+                    
+                }
+
+          /* contact us Responsivity IPAD */
+
+        @media only screen
+        and (min-width: 768px)
+        and (min-height:1024px){
+                     
+       .contactus h1{
+             
+        padding-top: 12%;
+        }
+                        
+        }
+      /* login Responsivity IPAD */
+        @media only screen
+        and (min-width: 768px)
+        and (min-height:1024px){
+                           
+        .login1 h1{
+                   
+        padding-top: 12%;
+         }
+        .loginbtn{
+            margin-left: 35%;
+        }
+                
+    }
+
+
+
+      /* SignUp Responsivity IPAD */
+      @media only screen
+      and (min-width: 768px)
+      and (min-height:1024px){
+                         
+      .createacc h1{
+                 
+      padding-top: 52%;
+       }
+      .registerbtn{
+          margin-left:29%;
+      }
+                            
+       }
+
+    
+      /* Purchase Responsivity IPAD */
+      @media only screen
+      and (min-width: 768px)
+      and (min-height:1024px){
+                         
+      
+        .purchase{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: -40%;
+            padding-top: 8%;
+        }
+        .slider {
+            margin: auto;
+            text-align: center;
+            margin-left: 20%;
+            margin-bottom: 15%;
+
+    }
+        .slider img{
+            width: 300px;
+            height: 300px;
+            margin-top: 5%;
+
+        }
+        .buysection p{
+            text-align: center;
+            margin:auto;
+        }
+        .buysection{
+            margin: auto;
+            margin-top: -30%;
+        }
+        .plug{
+            width: 120%;
+        }
+        .quantity{
+            margin: auto;
+            padding-bottom: 25px;
+            
+        }
+        .buypurchase{
+            margin: auto;
+            margin-bottom: 25px;
+        }
+        .trustbadge img{
+            margin: auto;
+            width: 100%;
+        }
+        .txtproduct p{
+            font-size: 15px;
+        }
+ 
+     }

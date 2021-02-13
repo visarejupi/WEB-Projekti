@@ -1,15 +1,10 @@
 function login()
 {
-    var email = document.getElementById("loginemail2").value;
-    var pass = document.getElementById("password").value;
+    var email = document.getElementById("contactemail").value;
     var txt = document.getElementById("textarea").value;
     if(email =='')
     {
         alert("Enter your email");
-    }
-    else if(pass=='')
-    {
-        alert("Enter your password");
     }
     else if(txt == '')
     {

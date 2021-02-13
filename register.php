@@ -1,29 +1,36 @@
 <?php
-include 'header.php';
-    ?>
+    include 'header.php';
+?>
+
     <main>
-        <form id="form">
-      
-            <div class="login">
-            <h1>Log in</h1>
-            <p>In order to buy the product you need to log in or sign up</p>
+        <script src="register.js"></script>
+
+        <div class="createaccount">
+          
+        <form id="createaccform">
+          
+            <div class="createacc">
+            <h1>Sign up</h1>
+            <p>Fill the following requests</p>
     
-           <input type="email" placeholder="Email" id="loginemail" class="tb" />
-         
-            <input type="password" placeholder="Enter Password here" id="password" class="tb" />
-        
-            <div class="loginbutonat">
+           <input type="name" placeholder="First Name" id="fname" /> <br>
+           <input type="name" placeholder="Second Name" id="sname" /> <br>
+           <input type="email" placeholder="Email" id="createaccemail"  /> <br>
+           <input type="password" placeholder="Enter Password " id="cpassword"  /> <br>
+           <input type="password" placeholder="Confirm Password" id="cpassword1"  /> 
+           <br>
+            
+           <button class="registerbtn" value="Login"  onClick="login()" >Sign Up</button>
 
-            <button class="loginbtn" value="Login"  onClick="login()" >Log in</button>
-            <a href="createacc.html">Don't have an account? Create one.</a>
-
+            </div>
             </div>
             </div>
              </form>
             
+     
+
     </main>
-      
- <?php
+
+    <?php
  include 'footer.php';
  ?>
-  
