@@ -9,14 +9,14 @@
             <h1>Login</h1>
              <p>We are happy to have you here</p>
              </div>
-             <form id="loginform">             
+             <form id="loginform" action="loginVerify.php" method="post" onsubmit="return validate()">             
               <div class="login">
 
              
-           <input type="email" placeholder="Email" id="loginemail" class="tb" /> <br>
-            <input type="password" placeholder="Password" id="password">       
+           <input type="email"  name="login-email"placeholder="Email" id="loginemail" class="tb" /> <br>
+            <input type="password" name="login-password"placeholder="Password" id="password">       
             <br>
-            <button class="loginbtn" value="Login"  onClick="login()" >Login</button>
+            <button class="loginbtn" value="Login" name="login-btn"  onClick="login()" >Login</button>
                     
             </div>
             </form>

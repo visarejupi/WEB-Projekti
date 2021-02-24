@@ -1,13 +1,13 @@
 <?php
-include_once 'userClass.php';
+include_once 'personClass.php';
 
-class SimpleUser extends User
+class SimpleUser extends Person
 {
-    private $email;
-    public function __construct($username,  $password, $role, $email)
+    private $lastname;
+    public function __construct($username,  $password, $age, $role, $lastname)
     {
-        parent::__construct($username, $password, $role);
-        $this->email = $email;
+        parent::__construct($username, $password, $age, $role);
+        $this->lastname = $lastname;
     }
 
     public function setSession()
@@ -21,9 +21,9 @@ class SimpleUser extends User
         setcookie("username", $this->getUsername(), time() + 2 * 24 * 60 * 60);
     }
 
-    public function getEmail()
+    public function getLastname()
     {
-        return $this->email;
+        return $this->lastname;
     }
     public function getUsername()
     {

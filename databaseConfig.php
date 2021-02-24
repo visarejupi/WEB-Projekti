@@ -6,8 +6,17 @@ class DatabaseConfiguration
 
     private $host = "localhost";
     private $username = "root";
-    private $dbName = "lamp";
+    private $dbName = "projekti";
     private $password = "";
+
+    private function createConnection()
+    {
+        $this->connection = new PDO
+        ("mysql:host=$this->host;dbname=$this->dbName",
+        $this->username,
+        $this->password);
+        $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    }
 
     protected function getConnection()
     {
@@ -15,10 +24,6 @@ class DatabaseConfiguration
         return $this->connection;
     }
 
-    private function createConnection()
-    {
-        $this->connection = new PDO("mysql:host=$this->host;dbname=$this->dbName", $this->username, $this->password);
-        $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    }
+   
 }
 

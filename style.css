@@ -850,3 +850,11 @@ padding-right: -8%;
         }
  
      }
+
+           /*DASHBOARD */
+.text1{
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+
+    font-size: 50px;
+}
